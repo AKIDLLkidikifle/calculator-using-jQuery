@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                <input id="display-number" readonly>
+            </div>
+            <div class="first division">
+                 <button onclick="del()" class="operator">AC</button>
+                 <button onclick="delLastItem()" class="operator">DE</button>
+                 <button onclick="readyToDisplay('.')">.</button>
+                 <button onclick="readyToDisplay('/')" class="operator">/</button>
+            </div>
+            <div class="second division">
+                <button onclick="readyToDisplay('7')">7</button>
+                <button onclick="readyToDisplay('8')">8</button>
+                <button onclick="readyToDisplay('9')">9</button>
+                <button onclick="readyToDisplay('*')" class="operator">*</button>
+            </div>
+            <div class="third division">
+                <button onclick="readyToDisplay('4')">4</button>
+                <button onclick="readyToDisplay('5')">5</button>
+                <button onclick="readyToDisplay('6')">6</button>
+                <button onclick="readyToDisplay('-')" class="operator">-</button>
+            </div>
+            <div class="fourth division">
+                <button onclick="readyToDisplay('1')">1</button>
+                <button onclick="readyToDisplay('2')">2</button>
+                <button onclick="readyToDisplay('3')">3</button>
+                <button onclick="readyToDisplay('+')" class="operator">+</button>
+            </div>
+            <div class="fifth division">
+                <button onclick="readyToDisplay('00')">00</button>
+                <button onclick="readyToDisplay('0')">0</button>
+                <button onclick="calculate()" class="equal-sign operator">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
